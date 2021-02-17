@@ -1,0 +1,65 @@
+#nav{
+    height: 50px;
+}
+.drop_item{
+    opacity: 0;
+}
+
+.drop{
+    height: 50px;
+    margin: 0;
+    background-color: #202d74;
+    color: #FFFFFF;
+}
+
+.drop_item.show{
+    height:100px;
+    opacity: 1;
+}
+
+.drop1{
+    float: left;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+
+}
+.nav_item{
+    width: 200px;
+    position: absolute;
+    z-index: 10;
+    background-color:#202d74;
+}
+.drop1:not(:last-child){
+    border-right:2px solid #ddd;
+    }
+  
+@media screen and (max-width: 750px) {
+#main2{
+    height: auto;
+}
+    #main2_left{
+        height: auto;
+        width: 100vw;
+        float: left;
+        margin-right: 42px;
+        color: #202d74;
+    }
+    #service_guide {
+        margin-left: 20px;
+    }
+    #service_guide li{
+        width: 31%;
+        height: 97px;
+        margin-right: 6.5px;
+        margin-bottom: 6.5px;
+    }
+    #guide1,#guide2,#guide3{
+        display: none;
+    }
+    #main2_right{
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+}

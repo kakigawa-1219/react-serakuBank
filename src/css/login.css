@@ -1,0 +1,15 @@
+html{
+   
+}
+
+.center{
+    text-align: center;
+}
+
+.login{
+    height: 500px;
+    padding: 60px 60px 40px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 800px;
+}
