@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import './css/maintop.css';
 
 function MainTop() {
+    const public_path = `${process.env.PUBLIC_URL}/images`;
     return(
         <div id="main1">
         <div id="main-image">
@@ -13,7 +14,7 @@ function MainTop() {
                   const settings = {
                       customPaging:function(i){
                           return(
-                              <a className="thumb_list"><img src={`./images/main0${i+1}_thumb.png`} alt=""/> </a>
+                              <a className="thumb_list"><img src={`${public_path}/main0${i+1}_thumb.png`} alt=""/> </a>
                           );
                       },
                    dots:true,
@@ -23,16 +24,17 @@ function MainTop() {
                    slidesToScroll: 1,
                    autoplay:true,
                    autoplaySpeed:5000,
-                   nextArrow:<img src="./images/arrow_right.png" alt=""></img>,
-                   prevArrow:<img src="./images/arrow_left.png" alt=""></img>,
+                   nextArrow:<img src={`${public_path}/arrow_right.png`} alt=""/>,
+                   prevArrow:<img src={`${public_path}/arrow_left.png`} alt=""/>,
                     };
                 
                  return(
                  
             <Slider {...settings}>
-                <div className="main-image"><img src={"./images/main01.png"}  alt=""></img></div>
-                <div className="main-image"><img src={"./images/main02.png"}  alt=""></img></div>
-                <div className="main-image"><img src={"./images/main03.png"}  alt=""></img></div>
+                <div className="main-image"><img src={`${public_path}/main01.png`}  alt=""/></div>
+                <div className="main-image"><img src={`${public_path}/main02.png`}  alt=""/></div>
+                <div className="main-image"><img src={`${public_path}/main03.png`}  alt=""/></div>
+            
             
             </Slider>
            

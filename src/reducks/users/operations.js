@@ -9,6 +9,8 @@ export const signIn = (email, password) => {
             alert("未入力があります");
             return false
         }
+     
+        
         return auth.signInWithEmailAndPassword(email,password)
         .then(result => {
                 const user = result.user;
@@ -40,16 +42,25 @@ export const signIn = (email, password) => {
 
 
 export const signUp = (username, email, password, confirmPassword) => {
-
+    var regexp =/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-].+(?:\.[a-zA-Z0-9-]+)*$/;
     return async(dispatch) => {
         if(username === "" || email === "" || password === "" || confirmPassword === "" ){
             alert("未入力があります");
+            return false
+        }
+        if (regexp.test(email) === false ){
+            alert("メールアドレスが正しくありません");
+            return false
+        }
+        if(password.length < 6 ){
+            alert("パスワードは6文字以上で入力してください");
             return false
         }
         if (password !== confirmPassword ){
             alert("パスワードが一致していません");
             return false
         }
+       
         return auth.createUserWithEmailAndPassword(email,password).then(result => {
             const user = result.user;
 

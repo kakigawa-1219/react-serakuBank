@@ -5,7 +5,7 @@ import './css/mainbottom.css'
 import Login from './login'
 import API from './api'
 import {useSelector} from 'react-redux'
-
+const public_path = `${process.env.PUBLIC_URL}/images`;
 const Greeting = () => {
     const selector = useSelector(state => state);
     const isSignedIn = selector.users.isSignedIn;
@@ -50,7 +50,7 @@ const MainBottom = () =>{
                     </ul>
                 </div>
                 <div id="guide3">
-                   <div><img src="./images/caution.png" alt=""></img></div>
+                   <div><img src={`${public_path}/caution.png`} alt=""/></div>
                 </div>
 
             </div>

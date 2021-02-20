@@ -42,7 +42,18 @@
 margin-right: 0;
 }
 
-
+.copyright{
+    background-color: #202d74;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+}
 
 
 

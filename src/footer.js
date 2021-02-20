@@ -1,4 +1,5 @@
 import React from 'react'
+import Copyright from './copyright'
 import './css/footer.css'
 function Footer(){
         return(
@@ -61,7 +62,7 @@ function Footer(){
          </div>
          
          </div>
-
+        <Copyright/>
          
          </>
          
