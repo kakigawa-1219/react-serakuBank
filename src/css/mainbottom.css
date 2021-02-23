@@ -141,6 +141,8 @@ width: 100%;
 }
 
 
+
+
 @media screen and (max-width: 750px) {
 #main2{
     height: auto;
@@ -165,8 +167,9 @@ width: 100%;
         display: none;
     }
     #main2_right{
-        height: auto;
+     height: 100%;
         margin-bottom: 20px;
     }
 
 }
+

@@ -58,7 +58,17 @@ margin-right: 0;
 
 
 @media screen and (max-width: 750px) {
-    #footer0{
+    #footer0,.copyright{
     display: none;
+    }
+    
+      
+    
+}
+
+@media screen and (max-width: 1030px) {
+    .copyright{
+        width: 130%;
+      
     }
 }

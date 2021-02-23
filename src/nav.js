@@ -49,15 +49,28 @@ const about = (
       <li> 組織体制</li>
       <li> お問合わせ先</li>
     </ul>
+    
 )
+const [click,setClick] = useState(false);
+const handleClick = () => setClick(!click);
     return(
-    <div id="nav">
-      <Dropdown title="個人のお客様" drop_item={kojin} active={active} setActive={setActive}/>
+      <>
+      <div className={click ? 'toggle_btn active' : 'toggle_btn'} onClick={handleClick}>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+     
+    <div id="nav" className={click ? 'active' : 'inactive'} >
+        
+      <Dropdown title="個人のお客様"  drop_item={kojin} active={active} setActive={setActive}/>
       <Dropdown title="法人のお客様" drop_item={houjin} active={active} setActive={setActive}/>
       <Dropdown title="株主・投資家の皆様" drop_item={kabu} active={active} setActive={setActive}/>
       <Dropdown title="採用情報" drop_item={saiyou} active={active} setActive={setActive}/>
       <Dropdown title="せらく銀行について" drop_item={about} active={active} setActive={setActive}/>
       </div>
+      </>
     );
 }
 

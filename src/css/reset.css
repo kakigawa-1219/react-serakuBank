@@ -337,6 +337,8 @@ blockquote {
     font-size: 24px
 }
 
+
+/*
 @media (min-width:1024px) {
     blockquote {
         line-height: 1.20833;
@@ -358,3 +360,4 @@ blockquote, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pr
     margin: 0;
     padding: 0
 }
+*/

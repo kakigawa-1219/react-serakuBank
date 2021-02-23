@@ -1,8 +1,4 @@
 
-
-.container3{
-    height: 406px;
-}
 .main-image {
     position: relative;
 }
@@ -34,8 +30,10 @@
 }
 
 
+
+
 @media screen and (max-width: 750px) {
-    .container3{
+    #main1{
         height: auto;
     }
 
